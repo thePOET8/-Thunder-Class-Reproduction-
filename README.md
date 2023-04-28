@@ -20,8 +20,10 @@ https://www.zhihu.com/question/389457315
 
 【“雷课堂” 大作业小课堂 - 1】
 https://www.bilibili.com/video/BV1rt4y127ak?vd_source=e4f2fda4b9410b91ed51e583b06b125e
+
 如何看待清华大学自动化系2020年大一c++大作业是写一个功能更强大的雨课堂（雷课堂）?
 https://www.zhihu.com/question/389457315
+
 以及GitHub上也有已经完成的项目以及在进行中的复刻项目可以带来启发
 
 以及ChatGPT和New Bing等AI工具辅助学习
