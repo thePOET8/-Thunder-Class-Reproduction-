@@ -67,4 +67,5 @@ https://www.zhihu.com/question/389457315
 
 ## 我的分析过程
 将大致的功能分类，可以得到大概如下分类。
-！[图片](https://github.com/DDDRN/cluster/blob/master/%E7%BB%93%E6%9E%9C.png?raw=true)
+
+！[图片](https://github.com/thePOET8/-Thunder-Class-Reproduction-/blob/main/1682942419057.png)
