@@ -64,3 +64,7 @@ https://www.zhihu.com/question/389457315
 	为上次的 socket 程序完成类设计，配置图形界面，以及封装成类。最初的类设计不多说，范老师用他严格的规范要求改了命名、接口、类结构等等（提及了用C++Builder写图形界面)（不过就现在而言更建议学学Qt Creator）
 
 	…………………………
+
+## 我的分析过程
+将大致的功能分类，可以得到大概如下分类。
+！[图片](https://github.com/DDDRN/cluster/blob/master/%E7%BB%93%E6%9E%9C.png?raw=true)
