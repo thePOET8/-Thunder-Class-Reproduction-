@@ -81,17 +81,23 @@ https://www.zhihu.com/question/389457315
 
 让我们先了解下声音吧，这里可以听一听
 【“雷课堂” 大作业小课堂 - 1】
+
 https://www.bilibili.com/video/BV1rt4y127ak?vd_source=e4f2fda4b9410b91ed51e583b06b125e 
 中视频选集2中02：03开始的部分。
 
 或者有一定基础的可以看下这篇博客
+
  [计算机音频基础-PCM简介](https://www.cnblogs.com/TianFang/p/7894630.html)
+ 
 以及可以使用AI工具辅助讲解和理解。
 
 由于我们所需实现的功能以录音为基础，加上获取麦克风录音、控制麦克风（这些都是建立在录音功能上）。我们来是实现录音功能。
 对此先学习三篇博客：
+
 [ C++ 采集音频流(PCM裸流)实现录音功能(双缓存版本) 寒潭雁影的博客-CSDN博客](https://blog.csdn.net/weixinhum/article/details/76158998?ops_request_misc=%257B%2522request%255Fid%2522%253A%2522168294470316800222822643%2522%252C%2522scm%2522%253A%252220140713.130102334.pc%255Fblog.%2522%257D&request_id=168294470316800222822643&biz_id=0&utm_medium=distribute.pc_search_result.none-task-blog-2~blog~first_rank_ecpm_v1~rank_v31_ecpm-1-76158998-null-null.blog_rank_default&utm_term=%E5%A3%B0%E9%9F%B3&spm=1018.2226.3001.4450)
+
 [C++ 调节PCM音频音量大小 寒潭雁影的博客-CSDN博客](https://blog.csdn.net/weixinhum/article/details/34864625?ops_request_misc=%257B%2522request%255Fid%2522%253A%2522168294470316800222822643%2522%252C%2522scm%2522%253A%252220140713.130102334.pc%255Fblog.%2522%257D&request_id=168294470316800222822643&biz_id=0&utm_medium=distribute.pc_search_result.none-task-blog-2~blog~first_rank_ecpm_v1~rank_v31_ecpm-2-34864625-null-null.blog_rank_default&utm_term=%E5%A3%B0%E9%9F%B3&spm=1018.2226.3001.4450)
+
 [C++ pcm音频裸流的压缩和解码__寒潭雁影的博客-CSDN博客](https://blog.csdn.net/weixinhum/article/details/31133459?ops_request_misc=%257B%2522request%255Fid%2522%253A%2522168294470316800222822643%2522%252C%2522scm%2522%253A%252220140713.130102334.pc%255Fblog.%2522%257D&request_id=168294470316800222822643&biz_id=0&utm_medium=distribute.pc_search_result.none-task-blog-2~blog~first_rank_ecpm_v1~rank_v31_ecpm-3-31133459-null-null.blog_rank_default&utm_term=%E5%A3%B0%E9%9F%B3&spm=1018.2226.3001.4450)
 
 （感谢各位前辈啊，跪谢）
