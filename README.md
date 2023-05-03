@@ -27,7 +27,7 @@ https://www.zhihu.com/question/389457315
 
 以及GitHub上也有已经完成的项目以及在进行中的复刻项目可以带来启发
 
-以及ChatGPT和New Bing等AI工具辅助学习
+以及ChatGPT和New Bing等AI工具辅助学习（推荐）
 
 ## 项目分析
 1. 基本要求
