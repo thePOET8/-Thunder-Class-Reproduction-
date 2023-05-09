@@ -140,8 +140,8 @@ https://www.bilibili.com/video/BV1vD4y1j7rm?vd_source=e4f2fda4b9410b91ed51e583b0
    	 .wFormatTag = WAVE_FORMAT_PCM, //FORMAT.wFormatTag, 声音格式为PCM
    	 .nChannels = 1,                //FORMAT.nChannels, 采样声道数，1声道
    	 .nSamplesPerSec = 8000,        //FORMAT.nSamplesPerSec, 采样率，8000次/秒
-    	.nAvgBytesPerSec = 8000,       //FORMAT.nAvgBytesPerSec, 每秒的数据率，就是每秒能采集多少字节的数据
-    	.nBlockAlign = 1,              //FORMAT.nBlockAlign, 一个块的对齐字节数，采样bit的字节数乘以声道数
+    	 .nAvgBytesPerSec = 8000,       //FORMAT.nAvgBytesPerSec, 每秒的数据率，就是每秒能采集多少字节的数据
+    	 .nBlockAlign = 1,              //FORMAT.nBlockAlign, 一个块的对齐字节数，采样bit的字节数乘以声道数
    	 .wBitsPerSample = 8,           //FORMAT.wBitsPerSample, 采样比特，16bits/次
    	 .cbSize = 0                    //FORMAT.cbSize, 一般为0
 	};
