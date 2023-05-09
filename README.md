@@ -121,7 +121,28 @@ https://www.bilibili.com/video/BV1vD4y1j7rm?vd_source=e4f2fda4b9410b91ed51e583b0
 
 [C++ pcm音频裸流的压缩和解码__寒潭雁影的博客-CSDN博客](https://blog.csdn.net/weixinhum/article/details/31133459?ops_request_misc=%257B%2522request%255Fid%2522%253A%2522168294470316800222822643%2522%252C%2522scm%2522%253A%252220140713.130102334.pc%255Fblog.%2522%257D&request_id=168294470316800222822643&biz_id=0&utm_medium=distribute.pc_search_result.none-task-blog-2~blog~first_rank_ecpm_v1~rank_v31_ecpm-3-31133459-null-null.blog_rank_default&utm_term=%E5%A3%B0%E9%9F%B3&spm=1018.2226.3001.4450)
 
-（感谢各位前辈啊，跪谢）
+
+根据对于WAV的基本了解，我们可以写出这样的音频类型声明：
+	/*************************************************************************
+	【文件名】audio.cpp
+	【功能模块和目的】音频类声明
+	*************************************************************************/
+
+
+	//类静态成员初始化，表示数据区默认大小10k字节
+	const unsigned int AudioFrame::BUF_SZIE = 1024 * 10;
+
+	//类静态成员初始化，表示录音和播放的音频格式
+	//请注意，这种结构体作为静态成员的初始化形式比较少见，初始化要加.成员名
+	const WAVEFORMATEX AudioFrame::FORMAT = {
+   	 .wFormatTag = WAVE_FORMAT_PCM, //FORMAT.wFormatTag, 声音格式为PCM
+   	 .nChannels = 1,                //FORMAT.nChannels, 采样声道数，1声道
+   	 .nSamplesPerSec = 8000,        //FORMAT.nSamplesPerSec, 采样率，8000次/秒
+    	.nAvgBytesPerSec = 8000,       //FORMAT.nAvgBytesPerSec, 每秒的数据率，就是每秒能采集多少字节的数据
+    	.nBlockAlign = 1,              //FORMAT.nBlockAlign, 一个块的对齐字节数，采样bit的字节数乘以声道数
+   	 .wBitsPerSample = 8,           //FORMAT.wBitsPerSample, 采样比特，16bits/次
+   	 .cbSize = 0                    //FORMAT.cbSize, 一般为0
+	};
 
 
 
