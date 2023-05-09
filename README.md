@@ -130,7 +130,7 @@ https://www.bilibili.com/video/BV1vD4y1j7rm?vd_source=e4f2fda4b9410b91ed51e583b0
 	【功能模块和目的】音频类声明
 	*************************************************************************/
 
-	```c++
+	
 	//类静态成员初始化，表示数据区默认大小10k字节
 	const unsigned int AudioFrame::BUF_SZIE = 1024 * 10;
 
@@ -142,10 +142,10 @@ https://www.bilibili.com/video/BV1vD4y1j7rm?vd_source=e4f2fda4b9410b91ed51e583b0
    	   .nSamplesPerSec = 8000,        //FORMAT.nSamplesPerSec, 采样率，8000次/秒
    	   .nAvgBytesPerSec = 8000,       //FORMAT.nAvgBytesPerSec, 每秒的数据率，就是每秒能采集多少字节的数据
     	   .nBlockAlign = 1,              //FORMAT.nBlockAlign, 一个块的对齐字节数，采样bit的字节数乘以声道数
-   	  .wBitsPerSample = 8,           //FORMAT.wBitsPerSample, 采样比特，16bits/次
+   	   .wBitsPerSample = 8,           //FORMAT.wBitsPerSample, 采样比特，16bits/次
    	   .cbSize = 0                    //FORMAT.cbSize, 一般为0
-};
+	};
 
-```        
+      
 
 ## 用户界面和UI（Qt Creater实现）
