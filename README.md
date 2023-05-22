@@ -80,6 +80,7 @@ https://www.zhihu.com/question/389457315
 那么如何的使用这些函数以及方便用户使用呢，就需要设计我们函数需要用到的类，也就是类结构设计
 (建议阅读《C++ primer 》类那章）
 
+![图片](https://github.com/thePOET8/-Thunder-Class-Reproduction-/blob/main/1684328662459.png)
 
 思路上是从上往下，从功能到接口；
 编码实现是从下往上，从接口编写到实现功能;
