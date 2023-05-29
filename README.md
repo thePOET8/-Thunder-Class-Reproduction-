@@ -136,7 +136,7 @@ https://www.bilibili.com/video/BV1vD4y1j7rm?vd_source=e4f2fda4b9410b91ed51e583b0
 -   类比一下身边记录声音的物品——磁带（虽然现在算比较少见了），在一段磁带的磁性物质上“刻下“特殊的印记，让磁带机能读取出来。
 -   有过一定基础的同学应该可以很快想出：
     -   创建一个空的音频，然后将采集到的声音以前文提到的WAV格式录入
--  由此我们可以写出
+-  由此我们可以写出（Windows API参考[waveHDR 结构 (mmeapi.h)](https://learn.microsoft.com/zh-CN/windows/win32/api/mmeapi/ns-mmeapi-wavehdr))
 
 	
 		/*************************************************************************
