@@ -132,29 +132,72 @@ https://www.bilibili.com/video/BV1vD4y1j7rm?vd_source=e4f2fda4b9410b91ed51e583b0
 [C++ pcm音频裸流的压缩和解码__寒潭雁影的博客-CSDN博客](https://blog.csdn.net/weixinhum/article/details/31133459?ops_request_misc=%257B%2522request%255Fid%2522%253A%2522168294470316800222822643%2522%252C%2522scm%2522%253A%252220140713.130102334.pc%255Fblog.%2522%257D&request_id=168294470316800222822643&biz_id=0&utm_medium=distribute.pc_search_result.none-task-blog-2~blog~first_rank_ecpm_v1~rank_v31_ecpm-3-31133459-null-null.blog_rank_default&utm_term=%E5%A3%B0%E9%9F%B3&spm=1018.2226.3001.4450)
 
 
-根据对于WAV的基本了解，我们可以写出这样的音频类型声明：
+根据对于WAV的基本了解，我们先来思考一下，如何实现录音这个功能呢？
+-   类比一下身边记录声音的物品——磁带（虽然现在算比较少见了），在一段磁带的磁性物质上“刻下“特殊的印记，让磁带机能读取出来。
+-   有过一定基础的同学应该可以很快想出：
+    -   创建一个空的音频，然后将采集到的声音以前文提到的WAV格式录入
+-  由此我们可以写出
 
 	
-	/*************************************************************************
-	【文件名】audio.cpp
-	【功能模块和目的】音频类声明
-	*************************************************************************/
+		/*************************************************************************
+		【文件名】audioframe.h
+		【功能模块和目的】音频类声明
 
-	
-	//类静态成员初始化，表示数据区默认大小10k字节
-	const unsigned int AudioFrame::BUF_SZIE = 1024 * 10;
+		*************************************************************************/
 
-	//类静态成员初始化，表示录音和播放的音频格式
-	//请注意，这种结构体作为静态成员的初始化形式比较少见，初始化要加.成员名
-	const WAVEFORMATEX AudioFrame::FORMAT = {
-   	   .wFormatTag = WAVE_FORMAT_PCM, //FORMAT.wFormatTag, 声音格式为PCM
-  	   .nChannels = 1,                //FORMAT.nChannels, 采样声道数，1声道
-   	   .nSamplesPerSec = 8000,        //FORMAT.nSamplesPerSec, 采样率，8000次/秒
-   	   .nAvgBytesPerSec = 8000,       //FORMAT.nAvgBytesPerSec, 每秒的数据率，就是每秒能采集多少字节的数据
- 	   .nBlockAlign = 1,              //FORMAT.nBlockAlign, 一个块的对齐字节数，采样bit的字节数乘以声道数
-   	   .wBitsPerSample = 8,           //FORMAT.wBitsPerSample, 采样比特，16bits/次
-   	   .cbSize = 0                    //FORMAT.cbSize, 一般为0
-	};
+		#ifndef	AUDIOFRAME_H
+		#define AUDIOFRAME_H
+
+		#include <Windows.h>
+
+		//用于友元的前置类声明
+		class Audio; 
+
+
+		/*************************************************************************
+		* 【类名】AudioCreate
+		* 【功能】构造、储存一段空音频帧，用于实现录音功能
+		* 【接口说明】
+		*      构造函数AudioCreate()构造一个空的音频帧，可容纳数据10k字节  
+		*      构造函数AudioCreate(const BYTE* pInBuffer, unsigned int Length)构造特定音频数据的音频帧
+		*		析构函数~AudioCreate()释放使用的资源，并销毁对象的非static数据成员
+		*		拷贝构造函数AudioCreate(const AudioCreate& Frame);
+		*		赋值运算符AudioCreate& operator= (const AudioCreate& Frame);
+		*		静态常量BUF_SZIE，数据区大小，固定为10k字节 
+		*		静态常量结构体FORMAT，采集/播放音频的格式
+		*		数据区指针pBuffer的常引用
+		*		音频头的常引用Header
+		* *************************************************************************/
+		class  AudioCreate	{
+		public:
+		//构造函数AudioCreate()构造一个空的音频帧，可容纳数据10k字节 
+		 AudioCreate();
+		 //构造特定音频数据的音频帧
+		 AudioCreate(const BYTE* pInBuffer, unsigned int Length);
+		 //析构函数
+		~ AudioCreate();
+		//拷贝构造函数
+		AudioCreate(const AudioCreate& Frame);
+		//赋值运算符
+		AudioCreate& operator= (const AudioCreate& Frame);
+		//静态常量BUF_SZIE，数据区大小，固定为10k字节
+		static const unsigned int BUF_SZIE;
+		//静态常量结构体FORMAT，采集/播放音频的格式
+		static const WAVEFORMATEX FORMAT;
+		//数据区指针pBuffer的常引用
+		BYTE* const& pBuffer;
+		//音频头的常引用Header(于此用到了WINDOWS API，所以开头引入了头文件<Windows.h>）
+		const WAVEHDR& Header;
+		private:
+		//友元
+		friend class Audio;
+		//采集/播放音频的格式，结构体
+		WAVEHDR m_Header;
+		//音频数据区指针
+		BYTE* m_pBuffer;
+		};
+		#endif // AUDIOCREATE_H
+
 
       
 
