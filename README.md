@@ -137,6 +137,7 @@ https://www.bilibili.com/video/BV1vD4y1j7rm?vd_source=e4f2fda4b9410b91ed51e583b0
 -   有过一定基础的同学应该可以很快想出：
     -   创建一个空的音频，然后将采集到的声音以前文提到的WAV格式录入
 -  由此我们可以写出（Windows API参考[waveHDR 结构 (mmeapi.h)](https://learn.microsoft.com/zh-CN/windows/win32/api/mmeapi/ns-mmeapi-wavehdr))
+-  //关于构造函数和析构函数可查阅或问AI（这就是前文提到运用AI工具的场合）
 
 	
 		/*************************************************************************
@@ -163,13 +164,13 @@ https://www.bilibili.com/video/BV1vD4y1j7rm?vd_source=e4f2fda4b9410b91ed51e583b0
 		* 【接口说明】
 		*      构造函数AudioCreate()构造一个空的音频帧，可容纳数据10k字节  
 		*      构造函数AudioCreate(const BYTE* pInBuffer, unsigned int Length)构造特定音频数据的音频帧
-		*		析构函数~AudioCreate()释放使用的资源，并销毁对象的非static数据成员
-		*		拷贝构造函数AudioCreate(const AudioCreate& Frame);
-		*		赋值运算符AudioCreate& operator= (const AudioCreate& Frame);
-		*		静态常量BUF_SZIE，数据区大小，固定为10k字节 
-		*		静态常量结构体FORMAT，采集/播放音频的格式
-		*		数据区指针pBuffer的常引用
-		*		音频头的常引用Header
+		*      析构函数~AudioCreate()释放使用的资源，并销毁对象的非static数据成员
+		*      拷贝构造函数AudioCreate(const AudioCreate& Frame);
+		*      赋值运算符AudioCreate& operator= (const AudioCreate& Frame);
+		*      静态常量BUF_SZIE，数据区大小，固定为10k字节 
+		*      静态常量结构体FORMAT，采集/播放音频的格式
+		*      数据区指针pBuffer的常引用
+		*      音频头的常引用Header
 		* *************************************************************************/
 		class  AudioCreate	{
 		public:
