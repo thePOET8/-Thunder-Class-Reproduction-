@@ -149,6 +149,9 @@ https://www.bilibili.com/video/BV1vD4y1j7rm?vd_source=e4f2fda4b9410b91ed51e583b0
 		#define AUDIOFRAME_H
 
 		#include <Windows.h>
+		
+		//如果使用vs，请取消 下一行的注释
+		//#pragma comment(lib, "winmm.lib")
 
 		//用于友元的前置类声明
 		class Audio; 
