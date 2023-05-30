@@ -146,7 +146,7 @@ https://www.bilibili.com/video/BV1vD4y1j7rm?vd_source=e4f2fda4b9410b91ed51e583b0
 
 		*************************************************************************/
 
-		#ifndef	AUDIOFRAME_H
+		#ifndef AUDIOFRAME_H
 		#define AUDIOFRAME_H
 
 		#include <Windows.h>
