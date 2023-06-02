@@ -178,8 +178,8 @@ https://www.bilibili.com/video/BV1vD4y1j7rm?vd_source=e4f2fda4b9410b91ed51e583b0
     		构造函数AudioFrame(const BYTE* pInBuffer, unsigned int Length)构造特定音频数据的音频帧
     		析构~AudioFrame();
     		拷贝构造函数AudioFrame(const AudioFrame& Frame);
-   		赋值运算符AudioFrame& operator= (const AudioFrame& Frame);
-  		静态常量BUF_SZIE，数据区大小，固定为10k字节
+   	        赋值运算符AudioFrame& operator= (const AudioFrame& Frame);
+  	        静态常量BUF_SZIE，数据区大小，固定为10k字节
     		静态常量结构体FORMAT，采集/播放音频的格式
     		数据区指针pBuffer的常引用
     		音频头的常引用Header
