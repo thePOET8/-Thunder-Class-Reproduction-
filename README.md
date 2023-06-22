@@ -224,3 +224,4 @@ https://www.bilibili.com/video/BV1vD4y1j7rm?vd_source=e4f2fda4b9410b91ed51e583b0
       
 
 ## 用户界面和UI（Qt Creater实现）
+	如同钉钉等应用一样，我们需要为我们的雷课堂实现一个界面（可能不止一个界面：比如针对管理员--教师设置与学生不同的界面）。
