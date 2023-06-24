@@ -71,7 +71,7 @@ https://www.zhihu.com/question/389457315
 ## 我的分析过程
 将大致的功能分类，可以得到大概如下分类。
 
-![图片](https://github.com/thePOET8/-Thunder-Class-Reproduction-/blob/main/1682942419057.png)
+![图片](https://github.com/thePOET8/-Thunder-Class-Reproduction-/blob/main/README.assets/1682942419057.png)
 
 在这当中，UI模块目测是最简单的部分，一方面我们对于AI的美观没有要求（先实现功能后面考虑UI），如果有过了解的话，可以利用Qt Designer，通过拖拽方式创建用户界面，甚至无需编写代码。
 
@@ -82,7 +82,7 @@ https://www.zhihu.com/question/389457315
 那么如何的使用这些函数以及方便用户使用呢，就需要设计我们函数需要用到的类，也就是类结构设计
 (建议阅读《C++ primer 》类那章）
 
-![图片](https://github.com/thePOET8/-Thunder-Class-Reproduction-/blob/main/1684328662459.png)
+![图片](https://github.com/thePOET8/-Thunder-Class-Reproduction-/blob/main/README.assets/1684328662459.png)
 
 思路上是从上往下，从功能到接口；
 编码实现是从下往上，从接口编写到实现功能;
@@ -352,6 +352,9 @@ https://www.bilibili.com/video/BV1vD4y1j7rm?vd_source=e4f2fda4b9410b91ed51e583b0
     			delete[] m_pBuffer;
 		}	
 
+
+我们通过这四个文件，初步地把语音模块的三个功能实现了。
+![图片](https://github.com/thePOET8/-Thunder-Class-Reproduction-/blob/main/README.assets/1687613651231.png)
       
 
 ## 用户界面和UI（Qt Creater实现）
