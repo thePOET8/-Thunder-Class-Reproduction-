@@ -357,5 +357,27 @@ https://www.bilibili.com/video/BV1vD4y1j7rm?vd_source=e4f2fda4b9410b91ed51e583b0
 ![图片](https://github.com/thePOET8/-Thunder-Class-Reproduction-/blob/main/README.assets/1687613651231.png)
       
 
-## 用户界面和UI（Qt Creater实现）
+## 用户界面和UI（Qt Creater和Qt Designer实现）
+
 	如同钉钉等应用一样，我们需要为我们的雷课堂实现一个界面（可能不止一个界面：比如针对管理员--教师设置与学生不同的界面）。
+	
+	这里，我使用的是Qt Creater和Qt Designer在来现界面。
+
+
+首先我们要明确需要做哪些界面：
+
+ 1. 登录界面（1）
+ 2. 登录之后又分为教师段和学生段（2）
+ 3.  功能端：注意力界面、提问界面、管理员界面【用于更改账户，修改密码等】（3）
+
+ ------------------------------
+ 
+**登录界面**
+	**登录界面**
+	
+推荐教程：[登录界面教程](%E3%80%90%E3%80%90%E7%A7%91%E6%99%AE%E3%80%91Qt%20Designer%E8%AE%BE%E8%AE%A1%E7%99%BB%E5%BD%95%E7%95%8C%E9%9D%A2%E3%80%91https://www.bilibili.com/video/BV1gb411W7WE?vd_source=e4f2fda4b9410b91ed51e583b06b125e)
+讲解的十分详细，评论区有源码。
+
+我按照此教程所做的最终效果图如下：![效果图](https://github.com/thePOET8/-Thunder-Class-Reproduction-/blob/main/README.assets/log_in_window_pic.png)
+
+	
