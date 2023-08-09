@@ -373,9 +373,8 @@ https://www.bilibili.com/video/BV1vD4y1j7rm?vd_source=e4f2fda4b9410b91ed51e583b0
  ------------------------------
  
 **登录界面**
-	**登录界面**
 	
-推荐教程：[登录界面教程](%E3%80%90%E3%80%90%E7%A7%91%E6%99%AE%E3%80%91Qt%20Designer%E8%AE%BE%E8%AE%A1%E7%99%BB%E5%BD%95%E7%95%8C%E9%9D%A2%E3%80%91https://www.bilibili.com/video/BV1gb411W7WE?vd_source=e4f2fda4b9410b91ed51e583b06b125e)
+推荐教程：[登录界面教程](https://www.bilibili.com/video/BV1gb411W7WE?vd_source=e4f2fda4b9410b91ed51e583b06b125e)
 讲解的十分详细，评论区有源码。
 
 我按照此教程所做的最终效果图如下：![效果图](https://github.com/thePOET8/-Thunder-Class-Reproduction-/blob/main/README.assets/log_in_window_pic.png)
