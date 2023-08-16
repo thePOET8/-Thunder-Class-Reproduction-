@@ -380,4 +380,4 @@ https://www.bilibili.com/video/BV1vD4y1j7rm?vd_source=e4f2fda4b9410b91ed51e583b0
 我按照此教程所做的最终效果图如下：![效果图](https://github.com/thePOET8/-Thunder-Class-Reproduction-/blob/main/README.assets/log_in_window_pic.png)
 
 **学生答题界面**	
-效果图如下：![效果图](https://github.com/thePOET8/-Thunder-Class-Reproduction-/blob/main/README.assets/Answer_Window.png)https://github.com/thePOET8/-Thunder-Class-Reproduction-/blob/main/README.assets/Answer_Window.png)
+效果图如下：![效果图](https://github.com/thePOET8/-Thunder-Class-Reproduction-/blob/main/README.assets/Answer_Window.png)
