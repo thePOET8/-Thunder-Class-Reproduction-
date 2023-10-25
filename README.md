@@ -381,3 +381,11 @@ https://www.bilibili.com/video/BV1vD4y1j7rm?vd_source=e4f2fda4b9410b91ed51e583b0
 
 **学生答题界面**	
 效果图如下：![效果图](https://github.com/thePOET8/-Thunder-Class-Reproduction-/blob/main/README.assets/Answer_Window.png)
+
+
+**10/25**
+更新了后续几个UI
+方法大概与上面的制作方式类似，不再赘述。
+后面可能还会稍微微调。
+
+后面正式开始存储模块的coding
