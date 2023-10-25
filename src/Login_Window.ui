@@ -13,6 +13,10 @@
   <property name="windowTitle">
    <string>Form</string>
   </property>
+  <property name="windowIcon">
+   <iconset>
+    <normaloff>Guess who I am.gif</normaloff>Guess who I am.gif</iconset>
+  </property>
   <property name="styleSheet">
    <string notr="true">*{
   background:rgb(255,255,255);
