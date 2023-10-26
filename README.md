@@ -73,7 +73,7 @@ https://www.zhihu.com/question/389457315
 
 ![图片](https://github.com/thePOET8/-Thunder-Class-Reproduction-/blob/main/README.assets/1682942419057.png)
 
-在这当中，UI模块目测是最简单的部分，一方面我们对于AI的美观没有要求（先实现功能后面考虑UI），如果有过了解的话，可以利用Qt Designer，通过拖拽方式创建用户界面，甚至无需编写代码。
+在这当中，UI模块目测是最简单的部分，一方面我们对于UI的美观没有要求（先实现功能后面考虑UI），如果有过了解的话，可以利用Qt Designer，通过拖拽方式创建用户界面，甚至无需编写代码。
 
  然而除此之外的对于我们来说就比较陌生了，存储模块可能涉及到数据库，屏幕获取、UDP传输、以及语音模块都相当陌生。那么我们还是先从类结构说起吧。
  
