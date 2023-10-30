@@ -400,3 +400,4 @@ https://www.bilibili.com/video/BV1vD4y1j7rm?vd_source=e4f2fda4b9410b91ed51e583b0
 
 （这里讲的有些牵强和生硬）
 简单分析可以知道，我们在用户管理上是根据Admin类、Teacher类和Student类共同组成了User类的（其他部分后续补充）。于是我们先从基本类开始构造。
+同时，一般都是先做好一个框架，再在上面一点点加功能，本项目也将会这么做。
