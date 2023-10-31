@@ -404,3 +404,6 @@ https://www.bilibili.com/video/BV1vD4y1j7rm?vd_source=e4f2fda4b9410b91ed51e583b0
 同时，一般都是先做好一个框架，再在上面一点点加功能，本项目也将会这么做。
 
 （一些函数由于我水平有限以及当时的学生有老师讲解（老师写的真的很好，这里建议好好看看源码以及了解下句柄等有关知识）（我看很多别人提交的作业这里面的实现也是抄老师的源码，那我也抄一些吧/脸红））
+
+以及关于基于windows socket的多线程TCP服务器，这里的讲解可能要等到后期再来补了，推荐看这个了
+[基于windows socket的多线程TCP服务器](https://www.cnblogs.com/jzincnblogs/p/5189636.html)
